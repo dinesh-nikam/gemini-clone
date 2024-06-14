@@ -169,7 +169,7 @@ const Main = () => {
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
-              <img onClick={handleSendClick} src={assets.send_icon} alt="" />
+               {input? <img onClick={handleSendClick} src={assets.send_icon} alt="" />:null}  
             </div>
           </div>
           <p className="bottom-info">
