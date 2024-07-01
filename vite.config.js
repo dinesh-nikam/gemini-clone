@@ -6,10 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["@google/generative-ai"]
+      external: ["@google/generative-ai"],
 
-    }
-  }
+    },
+  },
    
-})
+});
 
