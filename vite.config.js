@@ -1,16 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+
 export default defineConfig({
+  base: '/gemini-clone/',
   plugins: [react()],
-  base: 'gemini-clone',
-   build: {
-    rollupOptions: {
-      external: ["@google/generative-ai"]
-     
-    }
-  }
-   
 })
-
